@@ -21,7 +21,7 @@ app.get('/app2', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  res.send('It"'"s About Lorem Ipsum!')
+  res.send('Its About Lorem Ipsum!')
 });
 
 app.get('/users', (req, res, next) => {
