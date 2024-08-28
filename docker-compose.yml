@@ -33,7 +33,7 @@ services:
     ports:
       - "8080:80"
     environment:
-      - PMA_HOST=db
+      - PMA_HOST=172.23.10.20
 
   web:
     build: ./nginx
