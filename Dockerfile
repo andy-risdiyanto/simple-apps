@@ -1,5 +1,5 @@
 #FROM node:18.20.0-slim
-FROM ubuntu-nginx
+FROM node-apps
 WORKDIR /app
 ADD . .
 #RUN curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs
