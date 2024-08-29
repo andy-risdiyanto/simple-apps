@@ -1,11 +1,11 @@
-#version: "4.0"
+version: "3.9"
 services:
 
   backend:
     build: ./apps
     restart: always
-#    links:
-#      - db
+    links:
+      - db
     ports:
       - "3000"
     volumes:
@@ -33,7 +33,7 @@ services:
     ports:
       - "8080:80"
     environment:
-      - PMA_HOST=172.23.10.20
+      - PMA_HOST=db
 
   web:
     build: ./nginx
